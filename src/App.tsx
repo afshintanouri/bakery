@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BreadProduct, CartItem, PlacedOrder, DeliverySlot } from './types/bakery';
-import { getUpcomingBakeDates, SIGNATURE_BREADS } from './data/bakeryData';
+import { getUpcomingBakeDates, SIGNATURE_BREADS, BREAD_IMAGES } from './data/bakeryData';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { BakeScheduleBar } from './components/BakeScheduleBar';
@@ -47,7 +47,7 @@ export default function App() {
         },
         unitPrice: 16.00,
         quantity: 1,
-        image: '/src/assets/images/bread_spelt_boule_1793579440211.jpg',
+        image: BREAD_IMAGES.spelt,
       },
     ];
   });

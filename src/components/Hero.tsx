@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, MapPin, CheckCircle2, AlertCircle, Sparkles } from 'lucide-react';
-import { ADELAIDE_FOOTHILLS_SUBURBS } from '../data/bakeryData';
+import { ADELAIDE_FOOTHILLS_SUBURBS, BREAD_IMAGES } from '../data/bakeryData';
 
 interface HeroProps {
   onScrollToLoaves: () => void;
@@ -152,7 +152,7 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="w-full relative group">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] lg:aspect-auto lg:h-[500px] border border-[#E4D8C7] bg-[#E8DCCB]">
                 <img
-                  src="/src/assets/images/hero_sourdough_crust_1793579425992.jpg"
+                  src={BREAD_IMAGES.hero}
                   alt="Freshly baked organic sourdough boules cooling on reclaimed timber bench in Adelaide Foothills micro-bakery"
                   className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-[1.02]"
                   referrerPolicy="no-referrer"

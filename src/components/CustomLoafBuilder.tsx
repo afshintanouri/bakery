@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Sliders, Check, Wheat, Plus, CheckCircle, ShieldCheck } from 'lucide-react';
 import { FlourType, LoafSize, SlicingOption, CrustFinish, CartItem } from '../types/bakery';
-import { FLOUR_DEFINITIONS, SIZE_DEFINITIONS, SLICING_OPTIONS, CRUST_FINISHES } from '../data/bakeryData';
+import { FLOUR_DEFINITIONS, SIZE_DEFINITIONS, SLICING_OPTIONS, CRUST_FINISHES, BREAD_IMAGES } from '../data/bakeryData';
 
 interface CustomLoafBuilderProps {
   onAddToCart: (item: CartItem) => void;
@@ -80,7 +80,7 @@ export const CustomLoafBuilder: React.FC<CustomLoafBuilderProps> = ({ onAddToCar
       },
       unitPrice: calculatedPrice,
       quantity,
-      image: '/src/assets/images/bread_spelt_boule_1793579440211.jpg',
+      image: BREAD_IMAGES.spelt,
     };
 
     onAddToCart(item);

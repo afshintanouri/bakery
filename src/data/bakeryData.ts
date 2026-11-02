@@ -1,4 +1,15 @@
 import { BreadProduct, FlourType, LoafSize, SlicingOption, CrustFinish, PantryItem, DeliverySlot } from '../types/bakery';
+import heroSourdoughImg from '../assets/images/hero_sourdough_crust_1793579425992.jpg';
+import breadSpeltImg from '../assets/images/bread_spelt_boule_1793579440211.jpg';
+import breadRyeImg from '../assets/images/bread_dark_rye_1793579456773.jpg';
+import breadSeededImg from '../assets/images/bread_seeded_country_1793579470546.jpg';
+
+export const BREAD_IMAGES = {
+  hero: heroSourdoughImg,
+  spelt: breadSpeltImg,
+  rye: breadRyeImg,
+  seeded: breadSeededImg,
+};
 
 export const FLOUR_DEFINITIONS: Record<FlourType, {
   name: string;
@@ -138,7 +149,7 @@ export const SIGNATURE_BREADS: BreadProduct[] = [
     description: 'Made from 100% stoneground heritage spelt grain, nurtured with our 45-year-old mother starter. It develops a tender, creamy honeycomb crumb and a blistered hazelnut-fragrant crust.',
     defaultFlour: 'organic-spelt',
     availableFlours: ['organic-spelt', 'khorasan-blend', 'country-blend'],
-    image: '/src/assets/images/bread_spelt_boule_1793579440211.jpg',
+    image: BREAD_IMAGES.spelt,
     basePrice: 14.50,
     hydration: '78%',
     fermentationHours: 36,
@@ -153,7 +164,7 @@ export const SIGNATURE_BREADS: BreadProduct[] = [
     description: 'A genuine European-style dark sourdough with 100% stoneground whole rye flour, seasoned with toasted caraway and coriander seeds. Dense, succulent, and stays fresh for up to 12 days.',
     defaultFlour: 'organic-rye',
     availableFlours: ['organic-rye', 'organic-wholewheat', 'country-blend'],
-    image: '/src/assets/images/bread_dark_rye_1793579456773.jpg',
+    image: BREAD_IMAGES.rye,
     basePrice: 15.00,
     hydration: '82%',
     fermentationHours: 40,
@@ -168,7 +179,7 @@ export const SIGNATURE_BREADS: BreadProduct[] = [
     description: 'Our signature country dough loaded with a toasted seed soaker. Every slice is studded with nutty roasted pepitas, golden flax, and toasted white sesame, crowned with a crackling seeded crust.',
     defaultFlour: 'country-blend',
     availableFlours: ['country-blend', 'organic-wholewheat', 'organic-spelt'],
-    image: '/src/assets/images/bread_seeded_country_1793579470546.jpg',
+    image: BREAD_IMAGES.seeded,
     basePrice: 14.00,
     hydration: '80%',
     fermentationHours: 34,
@@ -183,7 +194,7 @@ export const SIGNATURE_BREADS: BreadProduct[] = [
     description: 'Our purest expression of South Australian grain and wild leaven. Blend of 80% unbleached stoneground organic flour and 20% stoneground whole wheat. Fermented cold over two nights for delicate wild tang.',
     defaultFlour: 'country-blend',
     availableFlours: ['country-blend', 'organic-wholewheat', 'organic-spelt'],
-    image: '/src/assets/images/hero_sourdough_crust_1793579425992.jpg',
+    image: BREAD_IMAGES.hero,
     basePrice: 13.00,
     hydration: '79%',
     fermentationHours: 36,
