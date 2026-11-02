@@ -1,0 +1,7 @@
+{
+  "name": "Foothills Sourdough | Organic Adelaide Micro-Bakery",
+  "description": "Artisanal organic sourdough bread crafted with slow 36-hour fermentation and stoneground grains. Fresh morning porch delivery across the Adelaide Foothills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
